@@ -14,7 +14,7 @@ spec:
    spec:
      containers:
      - name: express-sample
-       image: matamagu/express-sample
+       image: arechste/express-sample
        resources:
           limits:
             memory: 128Mi

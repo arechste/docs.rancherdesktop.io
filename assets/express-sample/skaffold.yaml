@@ -1,0 +1,13 @@
+apiVersion: skaffold/v2beta28
+kind: Config
+metadata:
+  name: express-sample
+build:
+  artifacts:
+  - image: arechste/express-sample
+    docker:
+      dockerfile: Dockerfile
+deploy:
+  kubectl:
+    manifests:
+    - manifests.yaml
